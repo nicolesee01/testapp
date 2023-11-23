@@ -1,1 +1,6 @@
+name: test
 
+on: [push]
+
+env:
+  LINK1: ${{ secrets.LINK1 }}
