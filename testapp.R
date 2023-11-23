@@ -3,7 +3,7 @@ library(raster)
 library(leaflet)
 
 source("testhelper.R")
-ic = raster("./data/IC_nonzero.tif")
+ic = raster(paste0('viscurl/', LINK1))
 
 ui = fluidPage(
   titlePanel("Irrecoverable Carbon in Wetlands"),
