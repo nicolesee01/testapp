@@ -2,6 +2,8 @@ library(shiny)
 library(raster)
 library(leaflet)
 
+Sys.getenv("testingonly")
+
 source("testhelper.R")
 ic = raster(paste0('viscurl/', LINK1))
 
