@@ -2,8 +2,10 @@ library(shiny)
 library(raster)
 library(leaflet)
 
+link_1 = Sys.getenv("LINK1")
+
 source("testhelper.R")
-ic = raster(paste0('viscurl/', LINK1))
+ic = raster(paste0('viscurl/', link_1))
 
 ui = fluidPage(
   titlePanel("Irrecoverable Carbon in Wetlands"),
