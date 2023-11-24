@@ -1,6 +1,4 @@
 name: test
-
-on: [push]
-
-env:
-  LINK1: ${{ secrets.LINK1 }}
+  env:
+    LINK1: ${{ secrets.LINK1 }}
+  run: app.R
